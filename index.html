@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Comunicação Client x Server e Introdução ao HTML na prática</title>
+		<title>Client x Server e HTML</title>
 	</head>
 	<body>
 		<h1>Introdução ao HTML na prática</h1>
@@ -10,25 +10,29 @@
 		<h2>Índice</h2>
 
 		<ol><strong> 
-			<li>Client x Server</li>
+			<li><a href="#clientxserver">Client x Server</a></li>
 			<ol>
-				<li>Clients</li>
-				<li>Servers</li>
-				<li>Linguagens de Programação</li>
+				<li><a href="#clients">Clients</a></li>
+				<li><a href="#servers">Servers</a></li>
+				<li><a href="#linguagens">Linguagens de Programação</a></li>
 			</ol>
 			<li>HTML</li>
 			<ol>
-				<li>Inspetor de Elementos</li>
-				<li>Estrutura de um arquivo html</li>
+				<li><a href="#inspetor">Inspetor de Elementos</a></li>
+				<li>Estrutura de um arquivo HTML</li>
 				<li>Tags e suas funções</li>
 			</ol>
 		</strong></ol>
 
-		<h2>Client x Server</h2>
+		<h2 id="clientxserver">Client x Server</h2>
 
-		<h3>Clients</h3>
+		<h3 id="clients">Clients</h3>
 
-		<p>&emsp;&emsp;&emsp;&emsp;No desenvolvimento moderno de software, os Clients compreendem o hardware e o software que durante o seu funcionamento acessam recursos disponibilizados por um Server. Esse software pode ser tanto uma aplicação instalada em um computador quanto uma acessada pela Internet com o auxílio de um navegador. Exemplos de Client incluem...</p>
+		<p>
+			&emsp;&emsp;&emsp;&emsp;
+			No desenvolvimento moderno de software, os Clients compreendem o hardware e o software que durante o seu funcionamento acessam recursos disponibilizados por um Server.
+			Esse software pode ser tanto uma aplicação instalada em um computador quanto uma acessada pela Internet com o auxílio de um navegador. Exemplos de Client incluem...
+		</p>
 
 		<p>No caso de aplicações instaladas:</p>
 
@@ -38,7 +42,7 @@
 			<li>E-mail (Outlook, Gmail)</li>
 		</ul>
 		
-		<p>No caso de aplicações na Web</p>
+		<p>No caso de aplicações Web:</p>
 
 		<ul>
 			<li>Plataformas de vídeo (Youtube)</li>
@@ -46,13 +50,104 @@
 			<li>Redes sociais (Twitter, Facebook)</li>
 		</ul>
 
-		<p>Nesse sentido, é importante mencionar que um mesmo software pode ser estar disponível tanto como aplicação instalada quanto como aplicação web</p>
-		<h3>Servers</h3>
+		<p>Nesse sentido, é importante mencionar que um mesmo software pode ser estar disponível tanto como aplicação instalada quanto como aplicação web.</p>
+		<h3 id="servers">Servers</h3>
 
-		<p>&emsp;&emsp;&emsp;&emsp;Os Servers, nesse mesmo contexto, compreendem o hardware e o software que atendem as requisições por recursos realizadas pelos Clients. Como esse trabalho geralmente é pesado, o hardware deles costuma ser robusto e, assim como o software no qual é executado, voltado a esse tipo de tarefa. Assim, possuem sistemas operacionais e computadores próprios diferentes daqueles dos Clients.</p>
+		<p>
+			&emsp;&emsp;&emsp;&emsp;
+			Os Servers, nesse mesmo contexto, compreendem o hardware e o software que atendem as requisições por recursos realizadas pelos Clients. 
+			Como esse trabalho geralmente é pesado, o hardware deles costuma ser robusto e, assim como o software no qual é executado, voltado a esse tipo de tarefa. Assim, possuem sistemas operacionais e computadores próprios diferentes daqueles dos Clients. Tipos de Servers incluem...
+		</p>
 
-		<h3>Linguagens de Programação</h3>
+		<ul>
+			<li>Arquivos</li>
+			<li>Firewall</li>
+			<li>Streaming</li>
+			<li>E-mail</li>
+			<li>Web</li>
+		</ul>
 
-		<p>&emsp;&emsp;&emsp;&emsp;As Linguagens de Programação são línguas formais concebidas para a descrição das instruções de programas de computador, expressando o seu algoritmo. Elas são concebidas para atender necessidades e problemas que surgiram ao longo do desenvolvimento da tecnologia e de suas aplicações, podendo ser voltadas para determinada área. Dessa forma, existem línguas voltadas as aplicações do Client, enquanto outras são direcionadas ao Server</p>
+		<h3 id="linguagens">Linguagens de Programação</h3>
+
+		<p>
+			&emsp;&emsp;&emsp;&emsp;
+			As Linguagens de Programação são línguas formais concebidas para a descrição das instruções de programas de computador, expressando o seu algoritmo.
+			Elas são concebidas para atender necessidades e problemas que surgiram ao longo do desenvolvimento da tecnologia e de suas aplicações, podendo ser voltadas para determinada área.
+			Dessa forma, existem línguas voltadas as aplicações do Client, enquanto outras são direcionadas ao Server.
+		</p>
+
+		<p>No lado do Server, elas incluem...</p>
+		
+		<ul>
+			<li>Javascript(Node.js)</li>
+			<li>Java</li>
+			<li>C#</li>
+			<li>Ruby</li>
+			<li>PHP</li>
+		</ul>
+
+		<h2>HTML</h2>
+
+		<h3 id="inspetor">Inspetor de Elementos</h3>
+
+		<p>
+			&emsp;&emsp;&emsp;&emsp;
+			O Inspetor de Elementos é uma ferramenta disponibilizada pelo navegador para verificar o código HTML e CSS associado a determinado elemento da página visualizada.
+			Apesar de não compor o HTML, ele é um meio interessante de estudar o código de um site e aprender com ele.
+		</p>
+
+		<h3>Estrutura de um arquivo HTML</h3>
+
+		<p>Um arquivo HTML simples pode ser visto a seguir:</p>
+
+		<p>
+			&lt;html&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&lt;head&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;title&gt;Minha página&lt;/title&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&lt;/head&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&lt;body&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;h1&gt;Título da página&lt;/h1&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;h2&gt;Subtítulo da página&lt;/h2&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Parágrafo&lt;/p&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;ol&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/ol&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;ul&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/ul&gt;<br/>
+			&emsp;&emsp;&emsp;&emsp;&lt;/body&gt;<br/>
+			&lt;/html&gt;
+		</p>
+
+		<p>
+			Nesse exemplo:
+		</p>
+		<ul>
+			<li>&lt;html&gt; e &lt;/html&gt; delimitam o arquivo HTML;</li>
+			<li>&lt;head&gt; e &lt;/head&gt; delimitam os elementos da página que aparecem antes de o site carregar ao usuário;</li>
+			<li>&lt;title&gt; e &lt;/title&gt; delimitam o nome da aba da página;</li>
+			<li>&lt;body&gt; e &lt;/body&gt; delimitam os elementos apresentados depois de o site carregar;</li>
+			<li>&lt;h1&gt; e &lt;/h1&gt; delimitam um cabeçário;</li>
+			<li>&lt;h2&gt; e &lt;/h2&gt; delimitam um cabeçário menor;</li>	
+			<li>&lt;p&gt; e &lt;/p&gt; delimitam um parágrafo;</li>
+			<li>&lt;ol&gt; e &lt;/ol&gt; delimitam uma lista ordenada, numerada;</li>
+			<li>&lt;ul&gt; e &lt;/ul&gt; delimitam uma lista não ordenada;</li>
+			<li>&lt;li&gt; e &lt;/li&gt; delimitam um elemento de uma lista</li>
+		</p>
+ 		</ul>
+
+		<h3>Tags e suas funções</h3>
+		
+		<p>
+			&emsp;&emsp;&emsp;&emsp;
+			As Tags no HTML podem tanto corresponder a uma estrutura (cabeçário, parágrafo, lista)
+			como a um meio de estilizar essas estruturas. Assim, além das tags já apresentadas, existem:
+		</p>
+			
+		
 	</body>
-</html>
+</html>	
