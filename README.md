@@ -1,1 +1,1 @@
-# Página HTML para expor o conteúdo apresentado no curso Introdução ao HTML na prática
+# Página HTML para expor o conteúdo aprendido nos cursos de Client x Server e HTML na prática

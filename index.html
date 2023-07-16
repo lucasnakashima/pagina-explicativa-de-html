@@ -3,7 +3,7 @@
 		<title>Client x Server e HTML</title>
 	</head>
 	<body>
-		<h1>Introdução ao HTML na prática</h1>
+		<h1 id="inicio">Introdução ao HTML na prática</h1>
 
 		<hr/>
 
@@ -28,6 +28,8 @@
 		<h2 id="clientxserver">Client x Server</h2>
 
 		<h3 id="clients">Clients</h3>
+
+		<p><a href="#inicio">(Voltar)</a></p>
 
 		<p>
 			&emsp;&emsp;&emsp;&emsp;
@@ -54,11 +56,13 @@
 		<p>Nesse sentido, é importante mencionar que um mesmo software pode ser estar disponível tanto como aplicação instalada quanto como aplicação web.</p>
 		<h3 id="servers">Servers</h3>
 
+		<p><a href="#inicio">(Voltar)</a></p>
+
 		<p>
 			&emsp;&emsp;&emsp;&emsp;
 			Os Servers, nesse mesmo contexto, compreendem o hardware e o software que atendem as requisições por recursos realizadas pelos Clients. 
 			Como esse trabalho geralmente é pesado, o hardware deles costuma ser robusto e,
-			assim como o software no qual é executado, voltado a esse tipo de tarefa.
+			assim como o software no qual é executado, ele é voltado a esse tipo de tarefa.
 			Assim, possuem sistemas operacionais e computadores próprios diferentes daqueles dos Clients.
 			Tipos de Servers incluem...
 		</p>
@@ -72,6 +76,8 @@
 		</ul>
 
 		<h3 id="linguagens">Linguagens de Programação</h3>
+
+		<p><a href="#inicio">(Voltar)</a></p>
 
 		<p>
 			&emsp;&emsp;&emsp;&emsp;
@@ -96,6 +102,8 @@
 
 		<h3 id="inspetor">Inspetor de Elementos</h3>
 
+		<p><a href="#inicio">(Voltar)</a></p>
+
 		<p>
 			&emsp;&emsp;&emsp;&emsp;
 			O Inspetor de Elementos é uma ferramenta disponibilizada pelo navegador para verificar o código HTML e CSS associado a determinado elemento da página visualizada.
@@ -104,37 +112,39 @@
 
 		<h3 id="estrutura">Estrutura de um arquivo HTML</h3>
 
+		<p><a href="#inicio">(Voltar)</a></p>
+
 		<p>Um arquivo HTML simples pode ser visto a seguir:</p>
 
-		<p>
-			&lt;html&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&lt;head&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;title&gt;Minha página&lt;/title&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&lt;/head&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&lt;body&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;h1&gt;Título da página&lt;/h1&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;h2&gt;Subtítulo da página&lt;/h2&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Parágrafo&lt;/p&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;ol&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/ol&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;ul&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Elemento da lista&lt;/li&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/ul&gt;<br/>
-			&emsp;&emsp;&emsp;&emsp;&lt;/body&gt;<br/>
-			&lt;/html&gt;
-		</p>
+		<pre>
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Minha página&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Título da página&lt;/h1&gt;
+		&lt;h2&gt;Subtítulo da página&lt;/h2&gt;
+		&lt;p&gt;Parágrafo&lt;/p&gt;
+		&lt;ol&gt;
+			&lt;li&gt;Elemento da lista&lt;/li&gt;
+			&lt;li&gt;Elemento da lista&lt;/li&gt;
+			&lt;li&gt;Elemento da lista&lt;/li&gt;
+		&lt;/ol&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Elemento da lista&lt;/li&gt;
+			&lt;li&gt;Elemento da lista&lt;/li&gt;
+			&lt;li&gt;Elemento da lista&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+		</pre>
 
 		<p>
 			Nesse exemplo:
 		</p>
 		<ul>
 			<li>&lt;html&gt; e &lt;/html&gt; delimitam o arquivo HTML;</li>
-			<li>&lt;head&gt; e &lt;/head&gt; delimitam os elementos da página que aparecem antes de o site carregar ao usuário;</li>
+			<li>&lt;head&gt; e &lt;/head&gt; delimitam os elementos da página que aparecem ao usuário antes de o site carregar;</li>
 			<li>&lt;title&gt; e &lt;/title&gt; delimitam o nome da aba da página;</li>
 			<li>&lt;body&gt; e &lt;/body&gt; delimitam os elementos apresentados depois de o site carregar;</li>
 			<li>&lt;h1&gt; e &lt;/h1&gt; delimitam um cabeçário;</li>
@@ -147,7 +157,9 @@
  		</ul>
 
 		<h3 id="tags">Tags e suas funções</h3>
-		
+	
+		<p><a href="#inicio">(Voltar)</a></p>
+	
 		<p>
 			&emsp;&emsp;&emsp;&emsp;
 			As Tags no HTML podem tanto corresponder a uma estrutura (cabeçário, parágrafo, lista)
@@ -157,13 +169,13 @@
 		<ul>
 			<li>&lt;mark&gt; e &lt;/mark&gt; que <mark>marcam</mark> o texto;</li>
 			<li>&lt;small&gt; e &lt;/small&gt; que deixam o texto <small>menor</small>;</li>
-			<li>&lt;i&gt; e &lt;/i&gt; que deixam o texto em <i>itálico</i></li>
-			<li>&lt;u&gt; e &lt;/u&gt; que deixam o texto <u>sublinhado</u></li>
-			<li>&lt;abbr&gt; e &lt;/abbr&gt; que sinalizam uma abreviatura (<abbr title="HyperText Markup Language">HTML</abbr>)</li>
-			<li>&lt;del&gt; e &lt;/del&gt; que sinalizam que um texto foi <del>deletado</del></li>
-			<li>&lt;font&gt; e &lt;/font&gt; que altera as características do <font color="Blue">texto</font></li>
-			<li>&lt;sup&gt; e &lt;/sup&gt; que deixam o texto <sup>sobrescrito</sup></li>
-			<li>&lt;sub&gt; e &lt;/sub&gt; que deixam o texto <sub>subscrito</sub></li>
+			<li>&lt;i&gt; e &lt;/i&gt; que deixam o texto em <i>itálico</i>;</li>
+			<li>&lt;u&gt; e &lt;/u&gt; que deixam o texto <u>sublinhado</u>;</li>
+			<li>&lt;abbr&gt; e &lt;/abbr&gt; que sinalizam uma abreviatura (<abbr title="HyperText Markup Language">HTML</abbr>);</li>
+			<li>&lt;del&gt; e &lt;/del&gt; que sinalizam que um texto foi <del>deletado</del>;</li>
+			<li>&lt;font&gt; e &lt;/font&gt; que altera as características do <font color="Blue">texto</font>;</li>
+			<li>&lt;sup&gt; e &lt;/sup&gt; que deixam o texto <sup>sobrescrito</sup>;</li>
+			<li>&lt;sub&gt; e &lt;/sub&gt; que deixam o texto <sub>subscrito</sub>;</li>
 			<li>&lt;blockquote&gt; e &lt;/blockquote&gt; que deixam o texto em bloco, como uma citação:</li>
 		</ul>
 
@@ -183,6 +195,15 @@
 		<h5>&lt;h5&gt; e &lt;/h5&gt;</h5>
 		<h6>&lt;h6&gt; e &lt;/h6&gt;</h6>
 
+		<h3 id="referencias">Referências</h3>
 
+		<p><a href="#inicio">(Voltar)</a></p>
+
+		<ul>
+			<li>Material sobre o modelo client-server. <a href="https://web.archive.org/web/20110406121920/http://java.sun.com/developer/Books/jdbc/ch07.pdf" target="_blank">https://web.archive.org/web/20110406121920/http://java.sun.com/developer/Books/jdbc/ch07.pdf</a></li>
+			<li>Biografia do criador da WEB e do HTML. <a href="https://www.britannica.com/biography/Tim-Berners-Lee" target="_blank">https://www.britannica.com/biography/Tim-Berners-Lee</a></li>
+			<li>"Dicionário" de tags. <a href="https://www.w3schools.com/TAGS/default.asp" target="_blank">https://www.w3schools.com/TAGS/default.asp</a></li>
+		</ul>
+	
 	</body>
 </html>	
